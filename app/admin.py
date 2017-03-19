@@ -11,6 +11,8 @@ class ModelAAdmin(admin.ModelAdmin):
         'value',
     ]
 
+    search_fields = ['value']
+
 
 @admin.register(ModelB)
 class ModelBAdmin(admin.ModelAdmin):
@@ -18,3 +20,11 @@ class ModelBAdmin(admin.ModelAdmin):
         'name',
         'data',
     ]
+
+    raw_id_fields = ['data', ]  # practice 1
+
+    list_select_related = ['data', ]  # practice 2
+
+    def get_queryset(self, request):  # practice 2
+        qs = super(ModelBAdmin, self).get_queryset(request)
+        return qs.prefetch_related('data')
