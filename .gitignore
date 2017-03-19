@@ -103,3 +103,4 @@ public
 *.db
 output/
 .idea
+.idea/workspace.xml
