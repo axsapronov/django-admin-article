@@ -87,3 +87,19 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+static/dist/fonts/
+**/*bundle*
+project/local_settings.py
+
+
+*.sqlite3
+**/packages
+**/node_modules/
+**/*.map
+local.py
+public
+*.pid
+*.db
+output/
+.idea

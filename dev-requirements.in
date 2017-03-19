@@ -1,0 +1,14 @@
+-r requirements.in
+
+bpython
+
+
+django-debug-toolbar<1.6
+
+
+# py.test plugins
+pytest
+pytest-cov
+pytest-django
+pytest-sugar
+
