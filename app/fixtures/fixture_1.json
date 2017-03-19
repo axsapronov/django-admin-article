@@ -1,0 +1,58 @@
+[
+{
+  "model": "app.modela",
+  "pk": 1,
+  "fields": {
+    "value": 1
+  }
+},
+{
+  "model": "app.modela",
+  "pk": 2,
+  "fields": {
+    "value": 2
+  }
+},
+{
+  "model": "app.modela",
+  "pk": 3,
+  "fields": {
+    "value": 43
+  }
+},
+{
+  "model": "app.modela",
+  "pk": 4,
+  "fields": {
+    "value": 321312
+  }
+},
+{
+  "model": "app.modela",
+  "pk": 5,
+  "fields": {
+    "value": 1111
+  }
+},
+{
+  "model": "app.modela",
+  "pk": 6,
+  "fields": {
+    "value": 2222
+  }
+},
+{
+  "model": "app.modela",
+  "pk": 7,
+  "fields": {
+    "value": 3333
+  }
+},
+{
+  "model": "app.modela",
+  "pk": 8,
+  "fields": {
+    "value": 4444
+  }
+}
+]
