@@ -5,7 +5,7 @@
 #    pip-compile --output-file requirements.txt requirements.in
 #
 django-adminactions==1.4
-django==1.10.6
+django==1.9.12
 future==0.16.0            # via xlwt-future
 pytz==2016.10             # via django-adminactions
 six==1.10.0               # via django-adminactions

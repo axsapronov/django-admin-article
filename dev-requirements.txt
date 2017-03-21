@@ -11,7 +11,8 @@ coverage==4.3.4           # via pytest-cov
 curtsies==0.2.11          # via bpython
 django-adminactions==1.4
 django-debug-toolbar==1.5
-django==1.10.6
+django-extensions==1.7.7
+django==1.9.12
 future==0.16.0            # via xlwt-future
 greenlet==0.4.12          # via bpython
 packaging==16.8           # via setuptools
@@ -24,7 +25,7 @@ pytest-sugar==0.8.0
 pytest==3.0.7
 pytz==2016.10             # via django-adminactions
 requests==2.13.0          # via bpython
-six==1.10.0               # via bpython, django-adminactions, packaging, setuptools
+six==1.10.0               # via bpython, django-adminactions, django-extensions, packaging, setuptools
 sqlparse==0.2.3           # via django-debug-toolbar
 termcolor==1.1.0          # via pytest-sugar
 unicodecsv==0.14.1        # via django-adminactions
