@@ -9,6 +9,7 @@ blessings==1.6            # via curtsies
 bpython==0.16
 coverage==4.3.4           # via pytest-cov
 curtsies==0.2.11          # via bpython
+django-admin-tools==0.8.0
 django-adminactions==1.4
 django-debug-toolbar==1.5
 django-extensions==1.7.7

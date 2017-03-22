@@ -17,3 +17,15 @@ class ModelB(models.Model):
 
     def __str__(self):
         return "Data {} = {}".format(self.name, self.data.value)
+
+
+class ModelC(models.Model):
+    name = models.CharField(_("Name"), max_length=255)
+
+
+class ModelD(models.Model):
+    name = models.CharField(_("Name"), max_length=255)
+
+
+class ModelE(models.Model):
+    name = models.CharField(_("Name"), max_length=255)
