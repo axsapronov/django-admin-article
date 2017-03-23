@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
 from django.contrib import admin
+from django.contrib.auth import get_user_model
+from django.contrib.auth.models import User
 
 from app.admin_opt import OptAdmin
 from app.models import ModelA, ModelB, ModelC, ModelD, ModelE
@@ -56,3 +58,23 @@ class ModelDAdmin(OptAdmin):
 @admin.register(ModelE)
 class ModelEAdmin(OptAdmin):
     pass
+
+
+def get_user_by_email(email):
+    try:
+        return get_user_model().objects.get(email__iexact=email)
+    except User.DoestNotExist:
+        return None
+
+
+class UserEmailSearchAdmin(admin.ModelAdmin):
+    def get_search_results(self, request, queryset, search_term):
+        user = get_user_by_email(search_term.strip())
+        if user is not None:
+            queryset = queryset.filter(user_id=user.id)
+            use_distinct = True
+        else:
+            queryset, use_distinct = super().get_search_results(request,
+                                                                queryset,
+                                                                search_term)
+        return queryset, use_distinct

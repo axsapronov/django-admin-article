@@ -29,3 +29,4 @@ class ModelD(models.Model):
 
 class ModelE(models.Model):
     name = models.CharField(_("Name"), max_length=255)
+
