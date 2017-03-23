@@ -151,7 +151,10 @@ class LargeTablePaginator(Paginator):
                         estimate = int(cursor.fetchone()[0])
                     except:
                         pass
-                self._count = estimate
+                if estimate < 1000:
+                    self._count = self.object_list.count()
+                else:
+                    self._count = estimate
             except (AttributeError, TypeError):
                 # AttributeError if object_list has no count() method.
                 # TypeError if object_list.count() requires arguments
